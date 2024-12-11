@@ -53,6 +53,6 @@ if __name__ == "__main__":
     run_dns_server(
         data_directory=os.environ.get('RECORD_DIR', './dns_txt_records'),
         address=os.environ.get('LISTEN_IP', '0.0.0.0'),
-        port=os.environ.get('LISTEN_PORT', '53')
+        port=int(os.environ.get('LISTEN_PORT', '53'))
     )
 
