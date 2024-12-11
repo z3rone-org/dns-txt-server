@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY dns_server.py ./
+COPY dns_txt.py ./
 RUN pip install dnslib
 RUN mkdir /app/dns_txt_records
 EXPOSE 53/udp
