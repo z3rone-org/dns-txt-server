@@ -1,3 +1,5 @@
+#!/usr/local/bin/python
+
 from dnslib import DNSRecord, RR, QTYPE, TXT
 from dnslib.server import DNSServer
 import os
